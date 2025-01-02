@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Practice with AI Characters</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Practice English with AI Characters</h1>
+        
+        <section id="voice-cloning">
+            <h2>Voice Cloning</h2>
+            <div class="voice-controls">
+                <button id="record-btn">Record Voice Sample</button>
+                <button id="clone-btn">Clone Voice</button>
+            </div>
+        </section>
+
+        <section id="character-background">
+            <h2>Character Background</h2>
+            <div class="background-info">
+                <textarea id="background-input" placeholder="Enter character background..."></textarea>
+                <button id="save-background">Save Background</button>
+            </div>
+        </section>
+
+        <section id="chat-interface">
+            <h2>Chat with Character</h2>
+            <div class="chat-window">
+                <div id="chat-history"></div>
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="send-btn">Send</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
